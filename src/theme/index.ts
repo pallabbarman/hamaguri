@@ -38,8 +38,24 @@ declare module '@mui/material/Button' {
     interface ButtonPropsColorOverrides extends CustomColorNames {}
 }
 
+declare module '@mui/material/IconButton' {
+    interface IconButtonPropsColorOverrides extends CustomColorNames {}
+}
+
 declare module '@mui/material/Chip' {
     interface ChipPropsColorOverrides extends CustomColorNames {}
+}
+
+declare module '@mui/material/Badge' {
+    interface BadgePropsColorOverrides extends CustomColorNames {}
+}
+
+declare module '@mui/material/CircularProgress' {
+    interface CircularProgressPropsColorOverrides extends CustomColorNames {}
+}
+
+declare module '@mui/material/Typography' {
+    interface TypographyPropsColorOverrides extends CustomColorNames {}
 }
 
 declare module '@mui/material/Typography' {
@@ -65,19 +81,66 @@ export const themeOptions: ThemeOptions = {
     palette: {
         black: {
             main: '#071c1f',
+            light: '#1a3a3e',
+            dark: '#000d0f',
+            contrastText: '#ffffff',
         },
         white: {
             main: '#ffffff',
+            light: '#ffffff',
+            dark: '#e0e0e0',
+            contrastText: '#071c1f',
         },
         lime: {
             main: '#80b500',
+            light: '#a3d400',
+            dark: '#5c8200',
+            contrastText: '#071c1f',
         },
         flavescent: {
             main: '#f7f5eb',
+            light: '#faf9f3',
+            dark: '#e8e4cc',
+            contrastText: '#071c1f',
+        },
+        primary: {
+            main: '#80b500',
+            contrastText: '#071c1f',
+        },
+        secondary: {
+            main: '#071c1f',
+            contrastText: '#ffffff',
+        },
+        text: { primary: '#071c1f', secondary: '#80b500' },
+        error: { main: '#dc3545' },
+        success: { main: '#80b500' },
+        warning: { main: '#ffc107' },
+        action: { active: '#80b500' },
+        background: {
+            paper: '#ffffff',
+            default: '#ffffff',
         },
     },
     typography: {
-        fontFamily: 'var(--font-family-rajdhani), sans-serif',
+        fontFamily: 'var(--font-rajdhani)',
+        h1: {
+            fontFamily: 'var(--font-rajdhani)',
+            fontSize: 72,
+            fontWeight: 700,
+            lineHeight: 1,
+        },
+        h2: {
+            fontFamily: 'var(--font-rajdhani)',
+            fontSize: 48,
+            fontWeight: 700,
+            lineHeight: 1.2,
+        },
+        h3: {
+            fontFamily: 'var(--font-rajdhani)',
+            fontSize: 24,
+            fontWeight: 700,
+            lineHeight: 1.3,
+        },
     },
 };
 

@@ -5,8 +5,8 @@ import ThemeProvider from 'theme/ThemeProvider';
 import './globals.css';
 
 const rajdhani = Rajdhani({
-    subsets: ['latin', 'devanagari'],
-    variable: '--font-family-rajdhani',
+    subsets: ['latin'],
+    variable: '--font-rajdhani',
     weight: ['400', '500', '600', '700'],
 });
 
