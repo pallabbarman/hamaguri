@@ -6,6 +6,7 @@ import { CSSProperties } from 'react';
 
 interface CustomColors {
     lime: SimplePaletteColorOptions;
+    pink: SimplePaletteColorOptions;
     black: SimplePaletteColorOptions;
     white: SimplePaletteColorOptions;
     flavescent: SimplePaletteColorOptions;
@@ -13,6 +14,7 @@ interface CustomColors {
 
 export interface CustomColorNames {
     lime: true;
+    pink: true;
     black: true;
     white: true;
     flavescent: true;
@@ -96,6 +98,9 @@ export const themeOptions: ThemeOptions = {
             light: '#a3d400',
             dark: '#5c8200',
             contrastText: '#071c1f',
+        },
+        pink: {
+            main: '#eababd',
         },
         flavescent: {
             main: '#f7f5eb',
