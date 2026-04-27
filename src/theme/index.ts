@@ -147,6 +147,13 @@ export const themeOptions: ThemeOptions = {
             lineHeight: 1.3,
         },
     },
+    components: {
+        MuiButton: {
+            defaultProps: {
+                variant: 'outlined',
+            },
+        },
+    },
 };
 
 const theme = createTheme(themeOptions);
