@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 const WebsiteLayoutNavbar = () => {
     return (
         <AppBar position="sticky" sx={{ bgcolor: 'white.main', boxShadow: 'none', py: 2 }}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Box>
                     <Typography variant="h2">Hamaguri</Typography>
                 </Box>

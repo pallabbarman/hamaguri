@@ -4,7 +4,7 @@ import Image from 'next/image';
 const HomeBanner = () => {
     return (
         <Box sx={{ bgcolor: 'pink.main' }}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Grid container spacing={3} sx={{ maxHeight: 800, alignItems: 'center' }}>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant="h3" color="white" sx={{ mb: 2 }}>
