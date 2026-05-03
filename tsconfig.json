@@ -23,6 +23,7 @@
             "_pages/*": ["./src/_pages/*"],
             "app/*": ["./src/app/*"],
             "components/*": ["./src/components/*"],
+            "constant/*": ["./src/constant/*"],
             "hooks/*": ["./src/hooks/*"],
             "icons/*": ["./src/icons/*"],
             "layouts/*": ["./src/layouts/*"],

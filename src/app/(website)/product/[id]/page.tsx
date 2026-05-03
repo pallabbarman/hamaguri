@@ -1,5 +1,7 @@
-const Product = () => {
-    return <div>This is single product page</div>;
+import Product from '_pages/Product';
+
+const ProductPage = () => {
+    return <Product />;
 };
 
-export default Product;
+export default ProductPage;

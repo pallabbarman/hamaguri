@@ -1,6 +1,7 @@
-import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import { ReactNode } from 'react';
 import WebsiteLayoutNavbar from './components/WebsiteLayoutNavbar';
+import WebsiteLayoutFooter from './components/WebsiteLayoutFooter';
 
 export interface WebsiteLayoutProps {
     children: ReactNode;
@@ -8,10 +9,11 @@ export interface WebsiteLayoutProps {
 
 const WebsiteLayout = ({ children }: WebsiteLayoutProps) => {
     return (
-        <Box>
+        <Stack>
             <WebsiteLayoutNavbar />
             {children}
-        </Box>
+            <WebsiteLayoutFooter />
+        </Stack>
     );
 };
 

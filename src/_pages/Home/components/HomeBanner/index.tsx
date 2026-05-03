@@ -5,8 +5,8 @@ const HomeBanner = () => {
     return (
         <Box sx={{ bgcolor: 'pink.main' }}>
             <Container maxWidth="lg">
-                <Grid container spacing={3} sx={{ maxHeight: 800, alignItems: 'center' }}>
-                    <Grid size={{ xs: 12, md: 6 }}>
+                <Grid container spacing={3} sx={{ alignItems: 'center', lg: { maxHeight: 800 } }}>
+                    <Grid size={{ xs: 12, md: 6 }} sx={{ p: 2 }}>
                         <Typography variant="h3" color="white" sx={{ mb: 2 }}>
                             100% genuine Products
                         </Typography>

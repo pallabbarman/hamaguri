@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Rajdhani } from 'next/font/google';
+import { Rajdhani, Open_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
 import ThemeProvider from 'theme/ThemeProvider';
 import './globals.css';
@@ -8,6 +8,12 @@ const rajdhani = Rajdhani({
     subsets: ['latin'],
     variable: '--font-rajdhani',
     weight: ['400', '500', '600', '700'],
+});
+
+const openSans = Open_Sans({
+    subsets: ['latin'],
+    variable: '--font-opensans',
+    weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
     children: ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${rajdhani.variable}`}>
+        <html lang="en" className={`${rajdhani.variable} ${openSans.variable}`}>
             <body>
                 <ThemeProvider>{children}</ThemeProvider>
             </body>

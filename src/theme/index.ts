@@ -26,6 +26,7 @@ interface CustomTypographyVariants {
     h1: CSSProperties;
     h2: CSSProperties;
     h3: CSSProperties;
+    caption: CSSProperties;
 }
 
 declare module '@mui/material/styles' {
@@ -73,7 +74,7 @@ declare module '@mui/material/Typography' {
         body1: false;
         body2: false;
         button: false;
-        caption: false;
+        caption: true;
         inherit: false;
         overline: false;
         subtitle1: false;
@@ -150,6 +151,12 @@ export const themeOptions: ThemeOptions = {
             fontSize: 24,
             fontWeight: 700,
             lineHeight: 1.3,
+        },
+        caption: {
+            fontFamily: 'var(--font-opensans)',
+            fontSize: 16,
+            fontWeight: 400,
+            lineHeight: '29px',
         },
     },
     components: {
